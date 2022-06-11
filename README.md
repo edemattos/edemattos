@@ -1,1 +1,3 @@
-![waveform](waveform.svg)
+<p align="center">
+  <img src="waveform.svg">
+</p>
