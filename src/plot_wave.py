@@ -52,7 +52,7 @@ def main():
 
     args = parse_args()
 
-	# load audio as a numpy array
+    # load audio as a numpy array
     sample_rate, audio = wavfile.read(args.filename)
 
     # pre-process
