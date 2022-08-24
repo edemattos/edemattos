@@ -17,7 +17,6 @@ def parse_args(args: list | None = None) -> argparse.Namespace:
     parser.add_argument("--end", type=float, default=-1.0, help="end time (seconds)")
     parser.add_argument("--outfile", type=Path, default="waveform.svg")
     parser.add_argument("--aspect_ratio", type=int, nargs=2, help="width height")
-
     return parser.parse_args(args)
 
 
@@ -26,14 +25,12 @@ def trim_audio(audio: array, sample_rate: int, start: float, end: float) -> arra
     # convert seconds to samples
     start = int(start * sample_rate)
     end = int(end * sample_rate)
-
     return audio[start:end]
 
 
 def normalize_samples(audio: array) -> array:
 
     norm = max(abs(max(audio)), abs(min(audio)))
-
     return audio / norm
 
 
@@ -63,5 +60,4 @@ def main():
 
 
 if __name__ == "__main__":
-
     main()
