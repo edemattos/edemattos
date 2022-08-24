@@ -1,3 +1,3 @@
 <p align="center">
-  <img src="waveform.svg">
+  <img src="images/waveform.svg">
 </p>
